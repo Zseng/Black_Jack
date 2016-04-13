@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="css/buildCard.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <div class="menu">
+        <img src="img/menu.png" alt="logo">
+        <div class="menuList" id="menu_1"><span>挑战电脑</span></div>
+        <div class="menuList" id="menu_2"><span>双人对战</span></div>
+        <div class="menuList" id="menu_3"><span>联机对战</span></div>
+    </div>
+    <div id="login">
+        <input type="text" placeholder="输入你的对战名字" id="input_name">
+        <input type="button" value="确定" id="input_btn">
+    </div>
+    <div class="container">
+        <header>
+            <span>Black Jack</span>
+        </header>
+
+
+        <div class="gameArea clearFloat">
+            <div class="sidebar">
+                <div class="photoArea">
+                    <div class="eachPhoto" id="oppositePhoto">
+                        <div class="AlphaGoSay">
+                            <span>我是阿法狗,你怕了吗?</span>
+                            <div class="triangle"></div>
+                        </div>
+                        <img src="img/AlphaGo.png" class="photo" alt="AlphaGo">
+                        <p id="oppositeName">AlphaGo</p>
+                    </div>
+                    <div class="eachPhoto" id="ownPhoto">
+                        <img src="img/me.png" class="photo" alt="me">
+                        <p id="ownName">萌萌哒的我</p>
+                    </div>
+
+                </div>
+                <div class="card_package">
+                    <img src="img/package.png" alt="package">
+                    <span class="package_num">52</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="card_area clearFloat">
+                    <div class="opponent_card_are _card_area">
+                        <div id="card_cover"></div>
+                    </div>
+                    <!--<div class="middle_line"></div>-->
+                    <div class="own_card_are _card_area"></div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="gameResults">
+            <span id="game_result"></span>
+        </div>
+
+        <div class="choiceBox">
+            <input type="button" class="choice" value="再要一张牌" disabled>
+            <input type="button" class="choice" value="不要牌了" disabled>
+
+            <input type="button" class="choice" value="玩家1再要一张牌" disabled>
+            <input type="button" class="choice" value="玩家1不要牌了" disabled>
+            <input type="button" class="choice" value="玩家2再要一张牌" disabled>
+            <input type="button" class="choice" value="玩家2不要牌了" disabled>
+
+            <input type="button" class="choice" value="开始游戏" id="refreshGame">
+        </div>
+
+    </div>
+
+    <script src="js/socket.io.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

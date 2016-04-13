@@ -1,0 +1,181 @@
+.card {
+    width:125px;
+    height:170px;
+    position:absolute;
+    overflow:hidden;
+    border:1px #c0c0c0 solid;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+/*中间图片通用设置*/
+.card span {
+    display: block;
+    width: 19px;
+    height: 20px;
+    position: absolute;
+    background: url("../img/card.gif") no-repeat;
+}
+/*小图片通用设置*/
+.card b {
+    display:block;
+    width:15px;
+    height:10px;
+    position:absolute;
+    font-size:10pt;
+    text-align:center;
+    font-weight:bold;
+    background:url("../img/card.gif") no-repeat;
+    overflow:hidden;
+}
+/*数字通用设置*/
+.card em {
+    display:block;
+    width:15px;
+    height:11px;
+    position:absolute;
+    font-size:10pt;
+    text-align:center;
+    font-weight:bold;
+    background:url("../img/card.gif") no-repeat;
+    overflow:hidden;
+}
+/*各坐标点位置*/
+.N1{left:1px;top:8px;}
+.First{left:5px;top:20px;}
+.A1{left:20px;top:20px;}
+.A2{left:20px;top:57px;}
+.A3{left:20px;top:94px;}
+.A4{left:20px;top:131px;}
+.A5{left:20px;top:76px;} /*第一列中间花色*/
+
+.B1{left:54px;top:38px;}
+.B2{left:54px;top:117px;}
+.B3{left: 54px;top:76px;} /*第二列中间花色*/
+
+.C1{left:86px;top:20px;}
+.C2{left:86px;top:57px;}
+.C3{left:86px;top:94px;}
+.C4{left:86px;top:131px;}
+.C5{left:86px;top:76px;} /*第三列中间花色*/
+
+.Last{bottom:20px;right:0px;}
+.N2{bottom:8px;right:5px;}
+
+/*jqk位置*/
+.jack_j {
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    left: 22px;
+    top: 20px;
+    border: 1px solid #000;
+    background: url("../img/card.gif") no-repeat 0 -62px;
+}
+.jack_q {
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    left: 22px;
+    top: 20px;
+    border: 1px solid #000;
+    background: url("../img/card.gif") no-repeat -80px -62px;
+}
+.jack_k {
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    left: 22px;
+    top: 20px;
+    border: 1px solid #000;
+    background: url("../img/card.gif") no-repeat -160px -62px;
+}
+
+
+/*大图标黑红梅方四种图片-上方向*/
+.card .up1{background-position:0 1px;}/*黑桃*/
+.card .up2{background-position:-19px 1px;}/*红桃*/
+.card .up3{background-position:-39px 1px;}/*梅花*/
+.card .up4{background-position:-58px 1px;}/*钢板*/
+
+
+/*大图标黑红梅方四种图片-下方向*/
+.card .down1{background-position:0 -19px;}/*黑桃*/
+.card .down2{background-position:-19px -20px;}/*红桃*/
+.card .down3{background-position:-39px -19px;}/*梅花*/
+.card .down4{background-position:-58px -19px;}/*钢板*/
+
+
+/*小图标黑红梅方四种图片-上方向*/
+.card .small_up1{background-position:0 -40px;}/*黑桃*/
+.card .small_up2{background-position:-19px -40px;}/*红桃*/
+.card .small_up3{background-position:-57px -40px;}/*梅花*/
+.card .small_up4{background-position:-38px -40px;}/*钢板*/
+
+/*小图标黑红梅方四种图片-下方向*/
+.card .small_down1{background-position:0 -51px;}/*黑桃*/
+.card .small_down2{background-position:-20px -51px;}/*红桃*/
+.card .small_down3{background-position:-58px -51px;}/*梅花*/
+.card .small_down4{background-position:-39px -51px;}/*钢板*/
+
+/*A~k数字图片-左上角*/
+.card .nA{background-position:-72px 0;left:-4px;width:21px;}
+.card .n2{background-position:-85px 0;left:-4px;width:21px;}
+.card .n3{background-position:-98px 0;left:-4px;width:21px;}
+.card .n4{background-position:-111px 0;left:-4px;width:21px;}
+.card .n5{background-position:-124px 0;left:-4px;width:21px;}
+.card .n6{background-position:-136px 0;left:-4px;width:21px;}
+.card .n7{background-position:-150px 0;left:-4px;width:21px;}
+.card .n8{background-position:-163px 0;left:-4px;width:21px;}
+.card .n9{background-position:-176px 0;left:-4px;width:21px;}
+.card .n10{background-position:-191px 0;left:-4px;width:21px;}
+.card .nj{background-position:-210px 0;left:-4px;width:21px;}
+.card .nq{background-position:-224px 0;left:-4px;width:21px;}
+.card .nk{background-position:-240px 0;left:-4px;width:21px;}
+
+
+/*A~k数字图片-右下角*/
+.card .nA_h{background-position:-77px -22px;right:3px;width:12px;}
+.card .n2_h{background-position:-91px -22px;right:3px;width:12px;}
+.card .n3_h{background-position:-104px -22px;right:3px;width:12px;}
+.card .n4_h{background-position:-117px -22px;right:3px;width:12px;}
+.card .n5_h{background-position:-130px -22px;right:3px;width:12px;}
+.card .n6_h{background-position:-143px -22px;right:3px;width:12px;}
+.card .n7_h{background-position:-157px -22px;right:3px;width:12px;}
+.card .n8_h{background-position:-169px -22px;right:3px;width:12px;}
+.card .n9_h{background-position:-182px -22px;right:3px;width:12px;}
+.card .n10_h{background-position:-191px -22px;right:3px;width:21px;}
+.card .nj_h{background-position:-215px -22px;right:3px;width:12px;}
+.card .nq_h{background-position:-230px -22px;right:3px;width:12px;}
+.card .nk_h{background-position:-246px -22px;right:3px;width:12px;}
+
+
+/*A~k数字图片-左上角红色字*/
+.card .nA_red{background-position:-72px -11px;left:-4px;width:21px;}
+.card .n2_red{background-position:-84px -11px;left:-4px;width:21px;}
+.card .n3_red{background-position:-96px -11px;left:-4px;width:21px;}
+.card .n4_red{background-position:-110px -11px;left:-4px;width:21px;}
+.card .n5_red{background-position:-124px -11px;left:-4px;width:21px;}
+.card .n6_red{background-position:-136px -11px;left:-4px;width:21px;}
+.card .n7_red{background-position:-148px -11px;left:-4px;width:21px;}
+.card .n8_red{background-position:-161px -11px;left:-4px;width:21px;}
+.card .n9_red{background-position:-174px -11px;left:-4px;width:21px;}
+.card .n10_red{background-position:-191px -11px;left:-4px;width:21px;}
+.card .nj_red{background-position:-208px -11px;left:-4px;width:21px;}
+.card .nq_red{background-position:-222px -11px;left:-4px;width:21px;}
+.card .nk_red{background-position:-236px -11px;left:-4px;width:21px;}
+
+/*A~k数字图片-右下角红色字*/
+.card .nA_h_red{background-position:-77px -33px;width: 12px;}
+.card .n2_h_red{background-position:-90px -33px;width: 12px;}
+.card .n3_h_red{background-position:-102px -33px;width: 12px;}
+.card .n4_h_red{background-position:-115px -33px;width: 12px;}
+.card .n5_h_red{background-position:-128px -33px;width: 12px;}
+.card .n6_h_red{background-position:-142px -33px;width: 12px;}
+.card .n7_h_red{background-position:-156px -33px;width: 12px;}
+.card .n8_h_red{background-position:-168px -33px;width: 12px;}
+.card .n9_h_red{background-position:-180px -33px;width: 12px;}
+.card .n10_h_red{background-position:-191px -33px;width: 21px;}
+.card .nj_h_red{background-position:-214px -33px;width: 12px;}
+.card .nq_h_red{background-position:-229px -33px;width: 12px;}
+.card .nk_h_red{background-position:-246px -33px;width: 12px;}
